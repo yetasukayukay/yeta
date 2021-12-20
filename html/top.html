@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="text/css" href="style1.css">
+<!-- bgcolor="lightpink" -->
+
+<style>
+*,*::after,*::before{
+   box-sizing: border-box;
+}
+.menu-btn {
+   font-size: 17px;
+   font-weight: bold;
+   display: inline-block;
+   text-align: center;
+   background-color: #555;
+   color: white;
+   padding: 12px;
+   font-family: 'arial,helvetica, sans-serif;
+   border: none;
+   width: 100%;
+}
+.dropdown-menu {
+   position: relative;
+   display: inline-block;
+}
+.menu-content {
+   display: none;
+   position: absolute;
+   width: 100%;
+   background-color: #017575;
+   min-width: 160px;
+   z-index: 1;
+}
+nav{
+   background-color: #555;
+   width: 100%;
+}
+.links,.links-hidden{
+   display: inline-block;
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold;
+   padding: 20px;
+}
+.links-hidden:hover,.links:hover {
+   background-color: #ffc6c7;
+}
+.dropdown-menu:hover .menu-content {
+   display: block;
+}
+.dropdown-menu:hover .menu-btn {
+   background-color: #ffc6c7;
+}
+.hamburger {
+   color: white;
+   font-weight: bolder;
+   display: none;
+}
+@media screen and (max-width: 500px) {
+   nav a:not(:first-child) {
+   display: block;
+   width: 100%;
+   text-align: left;
+}
+nav a.hamburger {
+   float: right;
+   display: block;
+   padding: 12px;
+}
+.dropdown-menu{
+   display: none;
+}
+nav.openNav a.hamburger {
+   position: relative;
+}
+nav.openNav a {
+   float: none;
+   display: block;
+   text-align: center;
+}
+}
+nav.openNav div.dropdown-menu{
+   display: block;
+   width: 100%;
+}
+
+</style>
+</head>
+<body>
+<h3 align="center" style="background-color: lightpink; padding-top= 50px; padding-bottom=50px;"> YETA'S UKAY UKAY</h3>
+<!-- <center><img src="images\logo.jpg" width="100%" height="550px"></center> -->
+<center><img src="images\logo.jpg" height="150"></center> <br>
+<p align="center">"Slay Like a Brandnew"</p>
+
+<center>
+<nav>
+<a class="links" href="index.html">Home</a>
+<a class="links" href="gallery.html">Gallery</a>
+<a class="links" href="about.html">About Us</a>
+<a class="links" href="contact.html">Contact Us</a>
+<div class="dropdown-menu">
+<button class="menu-btn">Sample Products <</button>
+<div class="menu-content">
+<a class="links-hidden" href="bag.html">Bag</a>
+<a class="links-hidden" href="footwear.html">Footwear</a>
+<a class="links-hidden" href="top.html">Top & Dress</a>
+<a class="links-hidden" href="shorts.html">Bottom</a>
+</div>
+</div>
+<a class="hamburger">☰</a>
+</nav>
+<script>
+var x = document.getElementsByTagName("nav")[0];
+function toggleNav() {
+   if (x.className === "") {
+      x.className = " openNav";
+   }
+   else {
+      x.className = "";
+   }
+}
+document.querySelector(".hamburger").addEventListener("click", toggleNav);
+</script>
+
+</center>
+
+<hr>
+<br><br>
+<center>
+      <img src="images\off 1.jpg" width="450" height="500">
+      <img src="images\off 2.jpg" width="450" height="500"><br><br><br>
+      <img src="images\off 3.jpg" width="450" height="500">
+      <img src="images\t1.jpg" width="450" height="500"><br><br><br>
+      <img src="images\t2.jpg" width="450" height="500">
+      <img src="images\t3.jpg" width="450" height="500"><br><br><br>
+      <img src="images\d1.jpg" width="450" height="700">
+      <img src="images\d2.jpg" width="450" height="700"><br><br><br>
+      <img src="images\d3.jpg" width="450" height="700"><br><br><br><br>
+
+<br><br><br>
+<footer style="background-color: lightpink;"> 
+  <a href="https://web.facebook.com/profile.php?id=100075790531192" target="_blank">
+      <img src="images\facebook.png" title= Go to Yeta's Ukay-ukay Facebook Page! height="25">
+  <a href="https://www.instagram.com/yetasukayukay/" target="_blank">
+      <img src="images\instagram.jpeg" title= Go to Yeta's Ukay-ukay Instagram Acount! height="25">
+  <a href="https://www.twitter.com/yetasukayukay/" target="_blank">
+      <img src="images\twitter.png" title= Go to Yeta's Ukay-ukay Instagram Acount! height="25"></a></br><br><br>
+  
+  Precie Mae G. Dulay<br>
+  Copyright @ 2021
+</fooer>
+</center>
+</body>
+
+</html>
